@@ -1,1 +1,0 @@
-# CICD_Project_Sonar_maven
