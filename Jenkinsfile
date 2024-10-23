@@ -15,7 +15,7 @@ pipeline {
         }
         stage('run') {
             steps {
-                sh 'docker run -d -p 8000:8000 shopping_cart'
+                sh 'docker run -d -p 5000:5000 shopping_cart'
                 echo 'Application is running successfully'
             }
         }
