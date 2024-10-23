@@ -14,7 +14,7 @@ pipeline{
         }
         stage("Docker Run"){
             steps{
-                sh'docker run -d -p 2000:80 shopping_web'
+                sh'docker run -d -p 10000:80 shopping_web'
             }
         }
     }
