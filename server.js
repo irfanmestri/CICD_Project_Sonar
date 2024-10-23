@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 mongoose.connect('mongodb://localhost/grocery-store', { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Routes
-app.use('/api/users', require('./routes/user'));
+app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/products', require('./routes/productRoutes'));
 
 // Start server
