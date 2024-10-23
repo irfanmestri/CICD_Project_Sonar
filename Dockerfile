@@ -5,4 +5,4 @@ COPY styles.css /usr/share/nginx/html/
 
 EXPOSE 2000
 
-CMD ["nginx" "-g" "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
