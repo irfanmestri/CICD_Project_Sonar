@@ -9,13 +9,13 @@ pipeline {
         }
         stage('Build&Test') {
             steps {
-               sh 'docker build -t shopping_cart .'
+               sh 'docker build -t Node_CICD .'
                 echo 'Build is completed'
             }
         }
         stage('run') {
             steps {
-                sh 'docker run -d -p 8070:8070 shopping_cart'
+                sh 'docker run -d -p 8070:8070 Node_CICD'
                 echo 'Application is running successfully'
             }
         }
