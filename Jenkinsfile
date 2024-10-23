@@ -9,7 +9,7 @@ pipeline{
         }
         stage("Docker Build"){
             steps{
-                sh'docker build -t shoppin_web .'
+                sh'docker build -t shopping_web .'
             }
         }
         stage("Docker Run"){
