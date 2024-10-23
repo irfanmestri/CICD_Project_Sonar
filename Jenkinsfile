@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-                git changelog: false, poll: false, url: 'https://github.com/irfanmestri/CICD_Project_Sonar.git'
+                git branch: 'main', url: 'https://github.com/irfanmestri/CICD_Project_Sonar.git'
             }
         }
         stage('Build&Test') {
