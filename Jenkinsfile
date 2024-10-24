@@ -1,8 +1,9 @@
 pipeline{
     agent any
     environment{
-        SONAR_HOME = tool "sonar"
+    SONAR_HOME = tool "sonar"
     }
+
 
     stages{
         stage("Git Checkout"){
@@ -26,7 +27,7 @@ pipeline{
         }
         stage("OWASP"){
             steps{
-                dependencyCheck additionalArguments: '--scan ./', odcInstallation: 'OWASP'
+                dependencyCheck additionalArguments: '--scan ./', odcInstallation: 'DC'
                 dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
             }
         }
