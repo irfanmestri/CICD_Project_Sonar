@@ -14,7 +14,7 @@ pipeline{
         stage("SonarQube Analysis"){
             steps{
                withSonarQubeEnv('Sonar'){
-                   sh "${SONAR_HOME}/bin/sonar-scanner -Dsonar.projectName=shopping_web -Dsonar.projectKey=shopping_web -X"
+                   sh "$SONAR_HOME/bin/sonar-scanner -Dsonar.projectName=shopping_web -Dsonar.projectKey=shopping_web -X"
                }
             }
         }
